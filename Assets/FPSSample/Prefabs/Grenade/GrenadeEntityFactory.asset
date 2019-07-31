@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce2d498f421929459a1c46f54a11770, type: 3}
+  m_Name: GrenadeEntityFactory
+  m_EditorClassIdentifier: 
+  guid:
+    val0: 1763255006
+    val1: 1293210560
+    val2: 1294123336
+    val3: -86423480
+  settings:
+    maxLifetime: 4
+    splashDamage:
+      radius: 7
+      falloffStartRadius: 2
+      damage: 40
+      minDamage: 0
+      impulse: 30
+      minImpulse: 0
+      ownerDamageFraction: 0.2
+    proximityTriggerDist: 1
+    gravity: 18
+    bounciness: 0.4
+    collisionRadius: 0.2
+  clientPresentation:
+    val0: 0
+    val1: 0
+    val2: 0
+    val3: 0

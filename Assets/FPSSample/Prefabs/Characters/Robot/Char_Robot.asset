@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13be3ac43b090de4381b4c003cab8dff, type: 3}
+  m_Name: Char_Robot
+  m_EditorClassIdentifier: 
+  prefabServer:
+    val0: 131426344
+    val1: 1843659972
+    val2: 2133769512
+    val3: 2070944759
+  prefabClient:
+    val0: -1437741147
+    val1: -1586174979
+    val2: 449527594
+    val3: -1922122910
+  prefab1P:
+    val0: -669924395
+    val1: 1735656616
+    val2: -677175765
+    val3: -1391425875

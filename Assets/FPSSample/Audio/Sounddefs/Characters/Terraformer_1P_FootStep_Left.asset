@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bccc8984edf250744a2ccc86959bb129, type: 3}
+  m_Name: Terraformer_1P_FootStep_Left
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 6d7fe9bdff5bbc5449f182bf8f6d6e41, type: 3}
+  - {fileID: 8300000, guid: 40128e0fc11af924d86fb4ff75ffdbc2, type: 3}
+  - {fileID: 8300000, guid: 6ccc5c71f7464d74e8becbafc6153a51, type: 3}
+  - {fileID: 8300000, guid: 213766a1a0e7b3d4d8046392c7d00bc9, type: 3}
+  - {fileID: 8300000, guid: 8861b85e84d01294990c86337a8bf780, type: 3}
+  - {fileID: 8300000, guid: 6f913f8c8ff774849b95b4b71daaebac, type: 3}
+  - {fileID: 8300000, guid: 07c0a232e17cc87499c4ca9b8e17deac, type: 3}
+  - {fileID: 8300000, guid: 920f3a8dd36bfec409303b51f785deb9, type: 3}
+  - {fileID: 8300000, guid: d2b1a121c05aff34b9c553fccefadd81, type: 3}
+  - {fileID: 8300000, guid: 832613bc1252a514e9498056c24dddea, type: 3}
+  - {fileID: 8300000, guid: 316647cea21f37f4e9a73ab44d7740c8, type: 3}
+  volume: -18
+  distMin: 1.5
+  distMax: 30
+  pitchMin: -1
+  pitchMax: 1
+  loopCount: 1
+  delayMin: 0
+  delayMax: 0
+  repeatMin: 1
+  repeatMax: 1
+  soundGroup: 1
+  spatialBlend: 0
+  panMin: -0.2
+  panMax: 0
+  rolloffMode: 1

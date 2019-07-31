@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
+  m_Name: Level_01_HDRISkySettings
+  m_EditorClassIdentifier: 
+  rotation: 278
+  exposure: 2
+  multiplier: 1
+  resolution: 1024
+  updateMode: 0
+  updatePeriod: 0
+  lightingOverride: {fileID: 0}
+  atmosphericScatteringSettings:
+    type: 2
+    colorMode: 1
+    fogColor: {r: 1, g: 0.4763344, b: 0.2688679, a: 1}
+    mipFogMaxMip: 1
+    mipFogNear: 1
+    mipFogFar: 20000
+    linearFogDensity: 1
+    linearFogStart: 500
+    linearFogEnd: 1000
+    expFogDistance: 50
+    expFogDensity: 0.488
+  skyHDRI: {fileID: 8900000, guid: 411da2032982a0b41a6e21816ca35bbf, type: 3}

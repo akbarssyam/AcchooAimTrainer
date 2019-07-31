@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e2180624792d948ac65eea6a705c9f, type: 3}
+  m_Name: Explosion_Barrel_Scifi_A
+  m_EditorClassIdentifier: 
+  registryId: 6
+  effect: {fileID: 8926484042661614526, guid: 03ec14bab1a2c0e4e910c50afbf92b42, type: 3}
+  effectStopDelay: 2
+  sound: {fileID: 11400000, guid: e5c46e67aa32b674e9f288e51a8c65a9, type: 2}
+  shockwave:
+    enabled: 0
+    force: 7
+    radius: 5
+    upwardsModifier: 0
+    mode: 1
+  prefab:
+    guid: c99b42fa4d242c54182e86b41e4717f5
+  poolSize: 16

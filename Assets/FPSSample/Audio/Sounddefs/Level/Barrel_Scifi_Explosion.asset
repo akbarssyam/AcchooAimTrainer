@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bccc8984edf250744a2ccc86959bb129, type: 3}
+  m_Name: Barrel_Scifi_Explosion
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 42a54da19caf9974a896a3984a036786, type: 3}
+  volume: -6
+  distMin: 5
+  distMax: 60
+  pitchMin: -2
+  pitchMax: 2
+  loopCount: 1
+  delayMin: 0
+  delayMax: 0.2
+  repeatMin: 0
+  repeatMax: 0
+  soundGroup: 1
+  spatialBlend: 1
+  panMin: 0
+  panMax: 0
+  rolloffMode: 0

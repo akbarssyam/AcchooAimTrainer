@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25005daa246ab794c95796a1f34c91c1, type: 3}
+  m_Name: Hero_Robot
+  m_EditorClassIdentifier: 
+  health: 100
+  sprintCameraSettings:
+    FOVFactor: 0.93
+    FOVInceraetSpeed: 1
+    FOVDecreaseSpeed: 0.2
+  eyeHeight: 1.9
+  characterMovementSettings:
+    slopeLimit: 50
+    stepOffset: 0.5
+    skinWidth: 0.08
+    minMoveDistance: 0.001
+    center:
+      x: 0
+      y: 1.18
+      z: 0
+    radius: 0.5
+    height: 2.2
+  abilities:
+    val0: -871046471
+    val1: -485192618
+    val2: 1775102633
+    val3: 317556934
+  character: {fileID: 11400000, guid: ef10be3110022d547abec5105be5d2f7, type: 2}
+  items:
+  - itemType: {fileID: 11400000, guid: f8faf4a0cc0eb9e4eb36ecbd2c4edebd, type: 2}

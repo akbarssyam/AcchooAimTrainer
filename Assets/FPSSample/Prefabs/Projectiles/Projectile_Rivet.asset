@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e725cb5e8f5e04288e43476108084f, type: 3}
+  m_Name: Projectile_Rivet
+  m_EditorClassIdentifier: 
+  guid:
+    val0: 1380309404
+    val1: 1247028295
+    val2: 1112632875
+    val3: -878802272
+  properties:
+    velocity: 80
+    impactDamage: 12
+    impactImpulse: 7
+    collisionRadius: 0.3
+    splashDamage:
+      radius: 0
+      falloffStartRadius: 0
+      damage: 0
+      minDamage: 0
+      impulse: 0
+      minImpulse: 0
+      ownerDamageFraction: 0
+  clientProjectileBufferSize: 20
+  clientProjectilePrefab:
+    val0: -1660070078
+    val1: -1755044249
+    val2: -827509176
+    val3: 383268064

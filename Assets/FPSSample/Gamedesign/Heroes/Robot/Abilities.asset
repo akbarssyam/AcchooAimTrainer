@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0eb5fff708916b4082867275a3e3dfe, type: 3}
+  m_Name: Abilities
+  m_EditorClassIdentifier: 
+  guid:
+    val0: -871046471
+    val1: -485192618
+    val2: 1775102633
+    val3: 317556934
+  abilities:
+  - factory: {fileID: 11400000, guid: c514adaa2f05af94683ab49794170152, type: 2}
+    canRunWith:
+    - {fileID: 11400000, guid: 92619440b1a7ce04db8693d624d502e6, type: 2}
+    canInterruptAll: 0
+    canInterrupt: []
+  - factory: {fileID: 11400000, guid: 75bbd147bf9d9074ca31d5250285a2bb, type: 2}
+    canRunWith:
+    - {fileID: 11400000, guid: 92619440b1a7ce04db8693d624d502e6, type: 2}
+    canInterruptAll: 0
+    canInterrupt: []
+  - factory: {fileID: 11400000, guid: 8007be782d4472f40a4aac87fd42210f, type: 2}
+    canRunWith:
+    - {fileID: 11400000, guid: 92619440b1a7ce04db8693d624d502e6, type: 2}
+    canInterruptAll: 0
+    canInterrupt:
+    - {fileID: 11400000, guid: cdd6a207d07951a439d37dae10964a7f, type: 2}
+  - factory: {fileID: 11400000, guid: cdd6a207d07951a439d37dae10964a7f, type: 2}
+    canRunWith:
+    - {fileID: 11400000, guid: 92619440b1a7ce04db8693d624d502e6, type: 2}
+    canInterruptAll: 0
+    canInterrupt: []
+  - factory: {fileID: 11400000, guid: 5fe68fa09bca08c4ca22f5157c271ad5, type: 2}
+    canRunWith: []
+    canInterruptAll: 0
+    canInterrupt:
+    - {fileID: 11400000, guid: 92619440b1a7ce04db8693d624d502e6, type: 2}
+  - factory: {fileID: 11400000, guid: 92619440b1a7ce04db8693d624d502e6, type: 2}
+    canRunWith: []
+    canInterruptAll: 0
+    canInterrupt: []
+  - factory: {fileID: 11400000, guid: b2475352283dd7841817a4cf8928bf07, type: 2}
+    canRunWith: []
+    canInterruptAll: 1
+    canInterrupt: []

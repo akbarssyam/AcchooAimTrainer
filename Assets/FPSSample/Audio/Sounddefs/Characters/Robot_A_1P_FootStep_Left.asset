@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bccc8984edf250744a2ccc86959bb129, type: 3}
+  m_Name: Robot_A_1P_FootStep_Left
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 26c16a0b2a4851e4ea4fac4528f464ee, type: 3}
+  - {fileID: 8300000, guid: ae01b50889474364480b08ba89e2b31c, type: 3}
+  - {fileID: 8300000, guid: 89cf715c4a1af7e4586136072f109659, type: 3}
+  - {fileID: 8300000, guid: 7499858e816ce5a4398e3d975cae8b7c, type: 3}
+  - {fileID: 8300000, guid: 61e9d6270f17714449aae19d41ba4f96, type: 3}
+  - {fileID: 8300000, guid: 355a5d6b717d034428c13af23edcf63d, type: 3}
+  - {fileID: 8300000, guid: 92af64a3f5fdae84e942f07bbb2ea93f, type: 3}
+  - {fileID: 8300000, guid: b3b7c5a1bc994a74fb38b2f13614a913, type: 3}
+  - {fileID: 8300000, guid: 91cb16af947d7e740934b7f705dc5741, type: 3}
+  - {fileID: 8300000, guid: 5841fcdca0a6a684786042142a5dcf9d, type: 3}
+  - {fileID: 8300000, guid: 48ecc34ddbbcbf5479b4b6978c0fb876, type: 3}
+  - {fileID: 8300000, guid: 051225325c8ce4748893f5f9db615b9d, type: 3}
+  - {fileID: 8300000, guid: 74cfc7eabf017d842a1eed1d6b8696c5, type: 3}
+  - {fileID: 8300000, guid: 7cbfba3537b8ff94b9635235ea4edb8f, type: 3}
+  - {fileID: 8300000, guid: f6ab7e14ae495e6469cd1f7e8b467b79, type: 3}
+  volume: -22
+  distMin: 1.5
+  distMax: 30
+  pitchMin: 0
+  pitchMax: 0
+  loopCount: 1
+  delayMin: 0
+  delayMax: 0
+  repeatMin: 1
+  repeatMax: 1
+  soundGroup: 1
+  spatialBlend: 0
+  panMin: 0
+  panMax: 0.2
+  rolloffMode: 1

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e2180624792d948ac65eea6a705c9f, type: 3}
+  m_Name: Impact_Robot_Weapon_A
+  m_EditorClassIdentifier: 
+  registryId: 3
+  effect: {fileID: 8926484042661614526, guid: 42a494dbad17fb94e826abdc6dcd4a24, type: 3}
+  effectStopDelay: 2
+  sound: {fileID: 11400000, guid: cac31614fd2d7fc45894f8b6edac8933, type: 2}
+  shockwave:
+    enabled: 0
+    force: 7
+    radius: 5
+    upwardsModifier: 0
+    mode: 1
+  prefab:
+    guid: d09f5da918de266468dd1073570ba081
+  poolSize: 16

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e725cb5e8f5e04288e43476108084f, type: 3}
+  m_Name: Projectile_GooRocket
+  m_EditorClassIdentifier: 
+  guid:
+    val0: -1469237829
+    val1: -849069050
+    val2: -2132021686
+    val3: -364504871
+  properties:
+    velocity: 30
+    impactDamage: 40
+    impactImpulse: 0
+    collisionRadius: 0.2
+    splashDamage:
+      radius: 5
+      falloffStartRadius: 1
+      damage: 40
+      minDamage: 5
+      impulse: 15
+      minImpulse: 5
+      ownerDamageFraction: 0.2
+  clientProjectileBufferSize: 20
+  clientProjectilePrefab:
+    val0: -2007355787
+    val1: -2034980645
+    val2: -2124473271
+    val3: 978375109

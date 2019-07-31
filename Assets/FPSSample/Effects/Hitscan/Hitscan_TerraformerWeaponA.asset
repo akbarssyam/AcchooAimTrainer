@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68296c825c96e4841b59c24abb3025af, type: 3}
+  m_Name: Hitscan_TerraformerWeaponA
+  m_EditorClassIdentifier: 
+  registryId: 0
+  effect: {fileID: 8926484042661614526, guid: cafd5f493d190b94e8999a405ecd2857, type: 3}
+  prefab:
+    guid: 6c40fe0cc31735a44b51b8e41d43aaf7
+  poolSize: 16

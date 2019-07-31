@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54bcd1d5cb4984847971142e9444d2fb, type: 3}
+  m_Name: TestLevel_ProceduralSkySettings
+  m_EditorClassIdentifier: 
+  rotation: 0
+  exposure: 0
+  multiplier: 1
+  resolution: 256
+  updateMode: 0
+  updatePeriod: 0
+  lightingOverride: {fileID: 0}
+  worldMieColorIntensity: 4
+  worldMieColorRamp:
+    serializedVersion: 2
+    key0: {r: 0.95, g: 0.75, b: 0.5, a: 0}
+    key1: {r: 0.4852941, g: 0.4400131, b: 0.3211505, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  worldMieDensity: 2
+  worldMieExtinctionFactor: 0
+  worldMieNearScatterPush: 0.99
+  worldMiePhaseAnisotropy: 0.95
+  worldNormalDistance: 1000
+  worldRayleighColorIntensity: 8
+  worldRayleighColorRamp:
+    serializedVersion: 2
+    key0: {r: 0.3, g: 0.4, b: 0.6, a: 1}
+    key1: {r: 0.5, g: 0.6, b: 0.8, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  worldRayleighDensity: 2
+  worldRayleighExtinctionFactor: 1.1
+  worldRayleighIndirectScatter: 0.33
+  worldRayleighNearScatterPush: 1
+  heightDistance: 300
+  heightExtinctionFactor: 1.1
+  heightMieDensity: 10
+  heightMieNearScatterPush: 1
+  heightNormalDistance: 1000
+  heightPlaneShift: {x: 0, y: 0, z: 0}
+  heightRayleighColor: {r: 1, g: 1, b: 1, a: 1}
+  heightRayleighDensity: 10
+  heightRayleighIntensity: 0.2
+  heightRayleighNearScatterPush: 0
+  heightSeaLevel: 598
+  skyHDRI: {fileID: 8900000, guid: 122349bedb3ceb74584b9dc323de225c, type: 3}
+  worldScaleExponent: 1
+  maxSkyDistance: 5000
+  skyYOffset: 0
+  debugMode: 0

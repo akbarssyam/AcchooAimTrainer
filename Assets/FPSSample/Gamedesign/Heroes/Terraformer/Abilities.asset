@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0eb5fff708916b4082867275a3e3dfe, type: 3}
+  m_Name: Abilities
+  m_EditorClassIdentifier: 
+  guid:
+    val0: 1745405556
+    val1: 951372826
+    val2: -2093497702
+    val3: 1540156203
+  abilities:
+  - factory: {fileID: 11400000, guid: 1d1099f7f2fb0b143a6ec418cf917ad8, type: 2}
+    canRunWith:
+    - {fileID: 11400000, guid: 62a7a4b018abcb64ea52e10542410978, type: 2}
+    canInterruptAll: 0
+    canInterrupt: []
+  - factory: {fileID: 11400000, guid: 438183796c00426458e910dba0d9e344, type: 2}
+    canRunWith:
+    - {fileID: 11400000, guid: 62a7a4b018abcb64ea52e10542410978, type: 2}
+    canInterruptAll: 0
+    canInterrupt: []
+  - factory: {fileID: 11400000, guid: 5d4b62d3d60af6e47997a1589223b71e, type: 2}
+    canRunWith:
+    - {fileID: 11400000, guid: 62a7a4b018abcb64ea52e10542410978, type: 2}
+    canInterruptAll: 0
+    canInterrupt: []
+  - factory: {fileID: 11400000, guid: 7094cf64a851d614ba787f59406901f9, type: 2}
+    canRunWith:
+    - {fileID: 11400000, guid: 62a7a4b018abcb64ea52e10542410978, type: 2}
+    canInterruptAll: 0
+    canInterrupt:
+    - {fileID: 11400000, guid: 5d4b62d3d60af6e47997a1589223b71e, type: 2}
+  - factory: {fileID: 11400000, guid: 5fe68fa09bca08c4ca22f5157c271ad5, type: 2}
+    canRunWith: []
+    canInterruptAll: 0
+    canInterrupt:
+    - {fileID: 11400000, guid: 62a7a4b018abcb64ea52e10542410978, type: 2}
+  - factory: {fileID: 11400000, guid: 62a7a4b018abcb64ea52e10542410978, type: 2}
+    canRunWith:
+    - {fileID: 11400000, guid: 1d1099f7f2fb0b143a6ec418cf917ad8, type: 2}
+    - {fileID: 11400000, guid: 7094cf64a851d614ba787f59406901f9, type: 2}
+    - {fileID: 11400000, guid: 438183796c00426458e910dba0d9e344, type: 2}
+    - {fileID: 11400000, guid: 5d4b62d3d60af6e47997a1589223b71e, type: 2}
+    canInterruptAll: 0
+    canInterrupt: []
+  - factory: {fileID: 11400000, guid: b2475352283dd7841817a4cf8928bf07, type: 2}
+    canRunWith: []
+    canInterruptAll: 1
+    canInterrupt: []

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb80bb6f7db7f148adcd7289adad7bb, type: 3}
+  m_Name: PresentationRegistry
+  m_EditorClassIdentifier: 
+  m_entries:
+  - ownerAssetGuid:
+      val0: 1763255006
+      val1: 1293210560
+      val2: 1294123336
+      val3: -86423480
+    platformFlags: 2
+    type: 0
+    variation: 0
+    presentation:
+      val0: -44133523
+      val1: -1742417046
+      val2: 764991401
+      val3: -680369132

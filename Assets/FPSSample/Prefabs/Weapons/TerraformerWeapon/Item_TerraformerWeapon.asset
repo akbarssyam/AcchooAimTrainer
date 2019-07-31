@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d2727f171b50414093d69795908bf81, type: 3}
+  m_Name: Item_TerraformerWeapon
+  m_EditorClassIdentifier: 
+  prefabServer:
+    val0: 0
+    val1: 0
+    val2: 0
+    val3: 0
+  prefabClient:
+    val0: 1129927809
+    val1: 1327789586
+    val2: 447313338
+    val3: -1713285801
+  prefab1P:
+    val0: -1910544369
+    val1: -1731939274
+    val2: -1619034678
+    val3: -1176623482
