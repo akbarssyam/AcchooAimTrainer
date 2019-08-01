@@ -18,8 +18,8 @@ public class ShootingProjectile : MonoBehaviour
 
     public void Shoot()
     {
-        GameObject clone = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-        clone.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
+        GameObject clone = Instantiate(bulletPrefab, Camera.main.transform.position, Quaternion.identity);
+        clone.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * bulletSpeed);
         Destroy(clone, 5.0f);
     }
 }

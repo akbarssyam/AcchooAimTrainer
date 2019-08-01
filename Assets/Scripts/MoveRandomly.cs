@@ -7,19 +7,14 @@ public class MoveRandomly : MonoBehaviour
     [SerializeField]
     [Range(1.0f, 10f)]
     private float moveSpeed = 5.0f;
-
-    [SerializeField]
-    [Range(5.0f, 10f)]
-    private float fieldArea = 8.0f;
-
-    private bool isMoving = false;
+    
     private Vector3 destination;
 
     // Start is called before the first frame update
     void Start()
     {
         // Find a new random destination
-        destination = new Vector3(Random.Range(-fieldArea, fieldArea), 0, Random.Range(-fieldArea, fieldArea));
+        destination = FindNewDestination();
     }
 
     // Update is called once per frame
@@ -30,8 +25,13 @@ public class MoveRandomly : MonoBehaviour
         if (transform.position == destination)
         {
             // Find a new random destination
-            destination = new Vector3(Random.Range(-fieldArea, fieldArea), 0, Random.Range(-fieldArea, fieldArea));
+            destination = FindNewDestination();
         }
+    }
+
+    private Vector3 FindNewDestination()
+    {
+        return new Vector3(Random.Range(-10.0f, 10.0f), 0, Random.Range(1.0f, 10.0f));
     }
 
     private void LateUpdate()
