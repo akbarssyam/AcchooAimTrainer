@@ -10,7 +10,7 @@ public class MoveRandomly : MonoBehaviour
     [Range(1.0f, 10f)]
     private float moveSpeed = 5.0f;
     
-    private Vector3 destination;
+    private Vector3 destination, velocity;
     public NavMeshAgent agent;
     public ThirdPersonCharacter character;
 
@@ -19,29 +19,26 @@ public class MoveRandomly : MonoBehaviour
     {
         // Find a new random destination
         destination = FindNewDestination();
-        agent.updateRotation = false;
-        agent.SetDestination(destination);
+        velocity = destination - transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
         //transform.position = Vector3.MoveTowards(transform.position, destination, Time.deltaTime * moveSpeed);
-        character.Move(agent.desiredVelocity, false, false);
-
-        //if (transform.position == destination)
-        if (agent.remainingDistance <= agent.stoppingDistance)
-            {
+        character.Move(velocity, false, false);
+        if (Vector3.Distance(transform.position, destination) <= 2f)
+        {
             // Find a new random destination
             character.Move(Vector3.zero, false, false);
             destination = FindNewDestination();
-            agent.SetDestination(destination);
+            velocity = destination - transform.position;
         }
     }
 
     private Vector3 FindNewDestination()
     {
-        return new Vector3(Random.Range(-10.0f, 10.0f), transform.position.y, Random.Range(1.0f, 10.0f));
+        return new Vector3(Random.Range(-18.0f, 18.0f), transform.position.y, Random.Range(2.0f, 10.0f));
     }
     /*
     private void LateUpdate()
