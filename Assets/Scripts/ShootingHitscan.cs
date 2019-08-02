@@ -11,6 +11,7 @@ public class ShootingHitscan : MonoBehaviour {
     public ParticleSystem muzzleFlash;
 
     private Animator anim;
+    private AudioSource gunSound;
     private float firePeriod;
     private float nextFire = 0f;
 
@@ -22,6 +23,7 @@ public class ShootingHitscan : MonoBehaviour {
 
         // Get animator to manage gun movement
         anim = GetComponent<Animator>();
+        gunSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,13 +39,19 @@ public class ShootingHitscan : MonoBehaviour {
     public void Shoot()
     {
         // Play the audio
-        GetComponent<AudioSource>().Play();
+        if (gunSound != null)
+        {
+            GetComponent<AudioSource>().Play();
+        }
 
         // Play the muzzle flash
         muzzleFlash.Play();
 
         // Play the firing animation
-        anim.SetTrigger("TriggerAction_PrimaryFire");
+        if (anim != null)
+        {
+            anim.SetTrigger("TriggerAction_PrimaryFire");
+        }
 
         Transform t = Camera.main.transform;
         if (Physics.Raycast(t.position, t.TransformDirection(Vector3.forward), out RaycastHit hit, Mathf.Infinity))
