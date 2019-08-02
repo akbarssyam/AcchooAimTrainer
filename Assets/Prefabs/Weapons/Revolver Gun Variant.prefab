@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3334352461026453540
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8032181900875286920, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_Name
+      value: Revolver Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900875286920, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.429
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.342
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.05396488
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.064785674
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0035086672
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9964328
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -6.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -7.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 773482596997156654, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: bulletDamageMin
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 773482596997156654, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: bulletDamageMax
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 773482596997156654, guid: faafd4f51e8dbd54c975e027700b38a5,
+        type: 3}
+      propertyPath: fireRate
+      value: 2.38
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: faafd4f51e8dbd54c975e027700b38a5, type: 3}
