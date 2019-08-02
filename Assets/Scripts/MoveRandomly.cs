@@ -9,6 +9,8 @@ public class MoveRandomly : MonoBehaviour
     [SerializeField]
     [Range(1.0f, 10f)]
     private float moveSpeed = 5.0f;
+
+    public float stoppingDistance = 2.0f;
     
     private Vector3 destination, velocity;
     public NavMeshAgent agent;
@@ -27,7 +29,7 @@ public class MoveRandomly : MonoBehaviour
     {
         //transform.position = Vector3.MoveTowards(transform.position, destination, Time.deltaTime * moveSpeed);
         character.Move(velocity, false, false);
-        if (Vector3.Distance(transform.position, destination) <= 2f)
+        if (Vector3.Distance(transform.position, destination) <= stoppingDistance)
         {
             // Find a new random destination
             character.Move(Vector3.zero, false, false);
