@@ -8,14 +8,20 @@ public class ShootingHitscan : MonoBehaviour {
     public float bulletDamageMax = 20;
     public float fireRate = 4;
     public GameObject hitEffect;
+    public ParticleSystem muzzleFlash;
 
+    private Animator anim;
     private float firePeriod;
     private float nextFire = 0f;
+
 
     private void Start()
     {
         // Delay between shots
         firePeriod = 1.0f / fireRate;
+
+        // Get animator to manage gun movement
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,6 +36,15 @@ public class ShootingHitscan : MonoBehaviour {
 
     public void Shoot()
     {
+        // Play the audio
+        GetComponent<AudioSource>().Play();
+
+        // Play the muzzle flash
+        muzzleFlash.Play();
+
+        // Play the firing animation
+        anim.SetTrigger("TriggerAction_PrimaryFire");
+
         Transform t = Camera.main.transform;
         if (Physics.Raycast(t.position, t.TransformDirection(Vector3.forward), out RaycastHit hit, Mathf.Infinity))
         {
@@ -44,9 +59,5 @@ public class ShootingHitscan : MonoBehaviour {
             Destroy(he, 1.0f);
         }
 
-        // Will still run even if the shot missed
-
-        // Play the audio
-        GetComponent<AudioSource>().Play();
     }
 }
