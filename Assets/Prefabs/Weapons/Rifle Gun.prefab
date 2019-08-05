@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletDamageMin: 18
-  bulletDamageMax: 20
+  bulletDamageMax: 25
   fireRate: 9
   hitEffect: {fileID: 5293601071164723526, guid: fc24da54f01a2f14c835a7af4484ab83,
     type: 3}

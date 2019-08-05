@@ -14,6 +14,10 @@ public class ShootingHitscan : MonoBehaviour {
     private AudioSource gunSound;
     private float firePeriod;
     private float nextFire = 0f;
+    [SerializeField]
+    private bool enableLaserLine = false;
+    [SerializeField]
+    private LineRenderer laserLine;
 
 
     private void Start()
@@ -45,7 +49,15 @@ public class ShootingHitscan : MonoBehaviour {
         }
 
         // Play the muzzle flash
-        muzzleFlash.Play();
+        if (!enableLaserLine)
+        {
+            muzzleFlash.Play();
+        }
+        else
+        {
+            StartCoroutine(EnableLaserLine());
+            laserLine.SetPosition(0, laserLine.transform.position);
+        }
 
         // Play the firing animation
         if (anim != null)
@@ -65,7 +77,33 @@ public class ShootingHitscan : MonoBehaviour {
             // Instantiate hit effect
             GameObject he = Instantiate(hitEffect, hit.point + hit.normal*0.2f, Quaternion.identity);
             Destroy(he, 1.0f);
+
+            // Set Laserline target to our hit target
+            if (enableLaserLine)
+            {
+                laserLine.SetPosition(1, hit.point);
+            }
+        }
+        else // If the shot doesn't hit anything
+        {
+            if (enableLaserLine)
+            {
+                Vector3 rayOrigin = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0.0f));
+                laserLine.SetPosition(1, rayOrigin + (Camera.main.transform.forward * 100f));
+            }
         }
 
+    }
+
+    IEnumerator EnableLaserLine()
+    {
+        // Turn on our line renderer
+        laserLine.enabled = true;
+
+        //Wait for .07 seconds
+        yield return new WaitForSeconds(firePeriod/2);
+
+        // Deactivate our line renderer after waiting
+        laserLine.enabled = false;
     }
 }
