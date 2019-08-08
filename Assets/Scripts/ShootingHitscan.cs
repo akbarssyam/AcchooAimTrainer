@@ -7,6 +7,7 @@ public class ShootingHitscan : MonoBehaviour {
     public float bulletDamageMin = 10;
     public float bulletDamageMax = 20;
     public float fireRate = 4;
+    public float impactForceBase = 5f;
     public GameObject hitEffect;
     public ParticleSystem muzzleFlash;
 
@@ -28,6 +29,7 @@ public class ShootingHitscan : MonoBehaviour {
         // Get animator to manage gun movement
         anim = GetComponent<Animator>();
         gunSound = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -73,6 +75,12 @@ public class ShootingHitscan : MonoBehaviour {
             // Apply Bullet Damage
             float damage = Mathf.RoundToInt(Random.Range(bulletDamageMin, bulletDamageMax));
             go.SendMessage("ApplyDamage", damage, SendMessageOptions.DontRequireReceiver);
+
+            // Add impact force
+            if (hit.rigidbody != null)
+            {
+                hit.rigidbody.AddForce(-hit.normal * impactForceBase * damage);
+            }
 
             // Instantiate hit effect
             GameObject he = Instantiate(hitEffect, hit.point + hit.normal*0.2f, Quaternion.identity);
