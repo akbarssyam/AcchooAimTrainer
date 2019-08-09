@@ -56,6 +56,13 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if (isQuitting) return;
 
-        GameObject.Find("EnemyManager").GetComponent<EnemySpawnManager>().SpawnEnemy();
+        if (gameObject.CompareTag("Enemy"))
+        {
+            GameObject.Find("ObjectManager").GetComponent<EnemySpawnManager>().SpawnEnemy();
+        } else if (gameObject.CompareTag("ShootingTarget"))
+        {
+            GameObject.Find("ObjectManager").GetComponent<ShootingTargetSpawnManager>().SpawnEnemy();
+        }
+
     }
 }

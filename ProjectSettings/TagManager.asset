@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Headshot
+  - ShootingTarget
   layers:
   - Default
   - TransparentFX

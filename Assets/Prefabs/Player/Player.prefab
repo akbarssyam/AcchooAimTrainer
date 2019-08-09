@@ -435,7 +435,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -716,11 +716,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile Gun
       objectReference: {fileID: 0}
-    - target: {fileID: 8282854457130173684, guid: e661273221a4fd24992ef6aab73ab867,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8282854457130539156, guid: e661273221a4fd24992ef6aab73ab867,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -795,11 +790,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sniper
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586061357915375106, guid: 6756315058714c2448f5b429fda42be1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1586061357915375105, guid: 6756315058714c2448f5b429fda42be1,
         type: 3}
@@ -965,11 +955,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rifle Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 8032181900875286920, guid: faafd4f51e8dbd54c975e027700b38a5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8032181900874995176, guid: faafd4f51e8dbd54c975e027700b38a5,
         type: 3}

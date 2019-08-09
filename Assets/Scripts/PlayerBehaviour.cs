@@ -37,6 +37,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void UpdateUI()
     {
-        hpText.text = hp.ToString();
+        if (hpText != null)
+            hpText.text = hp.ToString();
     }
 }

@@ -39,7 +39,7 @@ public class EnemySpawnManager : MonoBehaviour
                                    0,
                                    Random.Range(minZ, maxZ));
         }
-        GameObject spawn = Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
+        GameObject spawn = Instantiate(enemyPrefab, spawnPos, groundObject.transform.rotation);
         spawn.transform.LookAt(Camera.main.transform);
 
         // Add groundObject to spawned enemy
