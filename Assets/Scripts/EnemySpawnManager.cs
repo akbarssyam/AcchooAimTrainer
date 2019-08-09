@@ -5,12 +5,19 @@ using UnityEngine;
 public class EnemySpawnManager : MonoBehaviour
 {
     public GameObject enemyPrefab;
+    public GameObject groundObject;
     public bool spawnAtCenter = true;
+
+    [SerializeField]
+    private int spawnNumber = 2;
 
     // Start is called before the first frame update
     void Start()
     {
-        SpawnEnemy();
+        for (int i=0; i < spawnNumber; i++)
+        {
+            SpawnEnemy();
+        }
     }
 
     public void SpawnEnemy()
@@ -18,14 +25,28 @@ public class EnemySpawnManager : MonoBehaviour
         Vector3 spawnPos;
         if (spawnAtCenter)
         {
-            spawnPos = new Vector3(0, 0, 10f);
+            spawnPos = groundObject.GetComponent<Renderer>().bounds.center;
+            spawnPos.y = 0f;
         } else
         {
-            float xPos = Random.Range(-19.0f, 19.0f);
-            float zPos = Random.Range(1.0f, 19.0f);
-            spawnPos = new Vector3(xPos, 0, zPos);
+            Bounds bounds = groundObject.GetComponent<Renderer>().bounds;
+            float minX = bounds.center.x - gameObject.transform.localScale.x * bounds.size.x * 0.5f;
+            float maxX = bounds.center.x + gameObject.transform.localScale.x * bounds.size.x * 0.5f;
+            float minZ = bounds.center.z - gameObject.transform.localScale.z * bounds.size.z * 0.5f;
+            float maxZ = bounds.center.z + gameObject.transform.localScale.z * bounds.size.z * 0.5f;
+
+            spawnPos = new Vector3(Random.Range(minX, maxX),
+                                   0,
+                                   Random.Range(minZ, maxZ));
         }
         GameObject spawn = Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
         spawn.transform.LookAt(Camera.main.transform);
+
+        // Add groundObject to spawned enemy
+        MoveRandomly mr = spawn.GetComponent<MoveRandomly>();
+        if (mr != null)
+        {
+            mr.groundObject = groundObject;
+        }
     }
 }

@@ -40,7 +40,8 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void UpdateUI()
     {
-        hpText.text = curhp.ToString();
+        if (hpText != null)
+            hpText.text = curhp.ToString();
 
         float currentHealthPct = (float)curhp / (float)maxhp;
         OnHealthPctChanged(currentHealthPct);

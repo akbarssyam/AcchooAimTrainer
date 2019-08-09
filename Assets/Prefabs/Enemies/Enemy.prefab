@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 399898314}
   - component: {fileID: 399898316}
   - component: {fileID: 399898315}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 1810750797}
   - component: {fileID: 1810750796}
   - component: {fileID: 1810750798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 2018525817}
   - component: {fileID: 2018525816}
   - component: {fileID: 2018525815}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HPCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8565426866773082472}
   - component: {fileID: 8565426866773082473}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HeadPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 8565426867097956669}
   - component: {fileID: 8565426867097956668}
   - component: {fileID: 8565426867097956671}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Visor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 8565426867122637612}
   - component: {fileID: 8565426867122637615}
   - component: {fileID: 8565426867122637614}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,7 +617,7 @@ GameObject:
   - component: {fileID: 8565426867341705988}
   - component: {fileID: 8565426867341705991}
   - component: {fileID: 8565426867341705990}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -706,7 +706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8565426867477196457}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -743,7 +743,7 @@ GameObject:
   - component: {fileID: 8565426867953530925}
   - component: {fileID: 8565426867953530924}
   - component: {fileID: 6858894012747013847}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -853,3 +853,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  stoppingDistance: 2
+  groundObject: {fileID: 0}
+  character: {fileID: 0}
