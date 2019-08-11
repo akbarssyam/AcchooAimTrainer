@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootingTargetSpawnManager : MonoBehaviour
+public class ShootingTargetSpawnManager : MonoBehaviour, ISpawnManager
 {
     public GameObject shootingTargetPrefab;
     public GameObject groundObject;
@@ -30,5 +30,6 @@ public class ShootingTargetSpawnManager : MonoBehaviour
 
         GameObject spawn = Instantiate(shootingTargetPrefab, spawnPos, groundObject.transform.rotation);
         spawn.transform.LookAt(Camera.main.transform);
+        spawn.GetComponent<EnemyBehaviour>().spawnManager = this;
     }
 }

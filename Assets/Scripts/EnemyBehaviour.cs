@@ -11,6 +11,9 @@ public class EnemyBehaviour : MonoBehaviour
 
     public event Action<float> OnHealthPctChanged = delegate { };
 
+    [HideInInspector]
+    public ISpawnManager spawnManager;
+
     private float curhp;
 
     private void Start()
@@ -56,6 +59,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if (isQuitting) return;
 
+        /*
         if (gameObject.CompareTag("Enemy"))
         {
             GameObject.Find("ObjectManager").GetComponent<EnemySpawnManager>().SpawnEnemy();
@@ -63,6 +67,8 @@ public class EnemyBehaviour : MonoBehaviour
         {
             GameObject.Find("ObjectManager").GetComponent<ShootingTargetSpawnManager>().SpawnEnemy();
         }
+        */
+        spawnManager.SpawnEnemy();
 
     }
 }

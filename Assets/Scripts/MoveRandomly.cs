@@ -12,7 +12,10 @@ public class MoveRandomly : MonoBehaviour
 
     public float stoppingDistance = 2.0f;
 
+    [HideInInspector]
     public GameObject groundObject;
+
+    public bool jumping = false;
 
     private Vector3 destination, velocity;
     public ThirdPersonCharacter character;
@@ -29,7 +32,15 @@ public class MoveRandomly : MonoBehaviour
     void Update()
     {
         //transform.position = Vector3.MoveTowards(transform.position, destination, Time.deltaTime * moveSpeed);
-        character.Move(velocity, false, false);
+
+        if (jumping)
+        {
+            character.Move(velocity, false, true);
+        } else
+        {
+            character.Move(velocity, false, false);
+        }
+
         if (Vector3.Distance(transform.position, destination) <= stoppingDistance)
         {
             // Find a new random destination

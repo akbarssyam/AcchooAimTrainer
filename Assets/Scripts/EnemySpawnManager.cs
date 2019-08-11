@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawnManager : MonoBehaviour
+public class EnemySpawnManager : MonoBehaviour, ISpawnManager
 {
     public GameObject enemyPrefab;
     public GameObject groundObject;
@@ -41,6 +41,7 @@ public class EnemySpawnManager : MonoBehaviour
         }
         GameObject spawn = Instantiate(enemyPrefab, spawnPos, groundObject.transform.rotation);
         spawn.transform.LookAt(Camera.main.transform);
+        spawn.GetComponent<EnemyBehaviour>().spawnManager = this;
 
         // Add groundObject to spawned enemy
         MoveRandomly mr = spawn.GetComponent<MoveRandomly>();

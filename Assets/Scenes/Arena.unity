@@ -283,7 +283,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-28440
+  m_Name: pb_Mesh47926
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1020,7 +1020,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-28304
+  m_Name: pb_Mesh48054
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2495,7 +2495,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-25992
+  m_Name: pb_Mesh47982
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2988,7 +2988,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27882
+  m_Name: pb_Mesh47952
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3806,6 +3806,7 @@ GameObject:
   - component: {fileID: 1430618413}
   - component: {fileID: 1430618412}
   - component: {fileID: 1430618414}
+  - component: {fileID: 1430618415}
   m_Layer: 0
   m_Name: ObjectManager
   m_TagString: Untagged
@@ -3829,7 +3830,7 @@ MonoBehaviour:
     type: 3}
   groundObject: {fileID: 1619387850}
   spawnAtCenter: 0
-  spawnNumber: 2
+  spawnNumber: 3
 --- !u!4 &1430618413
 Transform:
   m_ObjectHideFlags: 0
@@ -3859,6 +3860,23 @@ MonoBehaviour:
   shootingTargetPrefab: {fileID: 2797863473307398129, guid: 0156856245324104294565176972fc9c,
     type: 3}
   groundObject: {fileID: 1076045936}
+  spawnNumber: 3
+--- !u!114 &1430618415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430618411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68228c2c685308d409af9ac37448e784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 6281486336547089265, guid: 2aa8bc7e95646974aaafab8443f1309a,
+    type: 3}
+  groundObject: {fileID: 884856390}
+  spawnAtCenter: 0
   spawnNumber: 3
 --- !u!1001 &1487629935
 PrefabInstance:
@@ -5539,7 +5557,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-28108
+  m_Name: pb_Mesh48068
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
