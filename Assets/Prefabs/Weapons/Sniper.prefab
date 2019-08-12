@@ -49,9 +49,12 @@ MonoBehaviour:
   bulletDamageMin: 70
   bulletDamageMax: 70
   fireRate: 2.38
+  impactForceBase: 5
   hitEffect: {fileID: 5293601071164723526, guid: fc24da54f01a2f14c835a7af4484ab83,
     type: 3}
   muzzleFlash: {fileID: 7471101651649874369}
+  enableLaserLine: 0
+  laserLine: {fileID: 0}
 --- !u!82 &1586061357915375111
 AudioSource:
   m_ObjectHideFlags: 0
@@ -64,7 +67,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d03d3da0179638f4daf8b129eba6c316, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0

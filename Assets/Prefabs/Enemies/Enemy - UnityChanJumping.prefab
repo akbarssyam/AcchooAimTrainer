@@ -532,7 +532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f225a9f57d910fd47820ecb660ce4dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 2
   stoppingDistance: 10
   groundObject: {fileID: 0}
   jumping: 1
@@ -600,10 +600,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MovingTurnSpeed: 720
   m_StationaryTurnSpeed: 360
-  m_JumpPower: 20
+  m_JumpPower: 15
   m_GravityMultiplier: 2
   m_RunCycleLegOffset: 0.2
-  m_MoveSpeedMultiplier: 2
+  m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 1
 --- !u!1001 &3757334613562215838

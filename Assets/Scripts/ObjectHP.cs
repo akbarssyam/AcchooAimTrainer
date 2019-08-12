@@ -8,6 +8,8 @@ public class ObjectHP : MonoBehaviour
 {
     public float maxhp = 50;
 
+    public GameObject destroyedVersion;
+
     private float curhp;
 
     private void Start()
@@ -28,7 +30,25 @@ public class ObjectHP : MonoBehaviour
     {
         if (curhp <= 0)
         {
-            Destroy(gameObject);
+            DestroyObject();
         }
+    }
+
+    public void DestroyObject()
+    {
+        StartCoroutine(SpawnNew());
+        GameObject dv = Instantiate(destroyedVersion, transform.position, transform.rotation);
+        Destroy(dv, 5.0f);
+
+        BoxSpawnManager._instance.SpawnNewBox(gameObject);
+        Destroy(gameObject);
+    }
+
+    IEnumerator SpawnNew()
+    {
+        yield return new WaitForSeconds(5.0f);
+
+        Debug.Log("Spawn new Box");
+        Instantiate(gameObject, transform.position, transform.rotation);
     }
 }
