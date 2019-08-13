@@ -255,5 +255,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
+
+        public void ChangeMouseSensitivity(float x, float y)
+        {
+            m_MouseLook.XSensitivity = x;
+            m_MouseLook.YSensitivity = y;
+        }
+
+        public float GetMouseSensitivity()
+        {
+            return m_MouseLook.XSensitivity;
+        }
     }
 }

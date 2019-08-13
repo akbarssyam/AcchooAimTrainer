@@ -14,6 +14,11 @@ public class WeaponSwitching : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseMenuBehaviour.GameIsPaused)
+        {
+            return;
+        }
+
         int prevWeapon = selectedWeapon;
 
         // If Scroll Down, change to next weapon

@@ -35,6 +35,11 @@ public class ShootingHitscan : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (PauseMenuBehaviour.GameIsPaused)
+        {
+            return;
+        }
+
         if (Input.GetButton("Fire1") && Time.time > nextFire + firePeriod)
         {
             Shoot();

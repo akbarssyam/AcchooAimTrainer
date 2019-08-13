@@ -10,6 +10,11 @@ public class ShootingProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseMenuBehaviour.GameIsPaused)
+        {
+            return;
+        }
+
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
