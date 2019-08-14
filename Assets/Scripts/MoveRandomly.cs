@@ -11,11 +11,15 @@ public class MoveRandomly : MonoBehaviour
     private float moveSpeed = 5.0f;
 
     public float stoppingDistance = 2.0f;
-    
-    private Vector3 destination, velocity;
-    public NavMeshAgent agent;
-    public ThirdPersonCharacter character;
 
+    [HideInInspector]
+    public GameObject groundObject;
+
+    public bool jumping = false;
+
+    private Vector3 destination, velocity;
+    public ThirdPersonCharacter character;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +32,15 @@ public class MoveRandomly : MonoBehaviour
     void Update()
     {
         //transform.position = Vector3.MoveTowards(transform.position, destination, Time.deltaTime * moveSpeed);
-        character.Move(velocity, false, false);
+
+        if (jumping)
+        {
+            character.Move(velocity, false, true);
+        } else
+        {
+            character.Move(velocity, false, false);
+        }
+
         if (Vector3.Distance(transform.position, destination) <= stoppingDistance)
         {
             // Find a new random destination
@@ -40,7 +52,16 @@ public class MoveRandomly : MonoBehaviour
 
     private Vector3 FindNewDestination()
     {
-        return new Vector3(Random.Range(-18.0f, 18.0f), transform.position.y, Random.Range(2.0f, 10.0f));
+        //return new Vector3(Random.Range(-18.0f, 18.0f), transform.position.y, Random.Range(2.0f, 10.0f));
+        Bounds bounds = groundObject.GetComponent<Renderer>().bounds;
+        float minX = bounds.center.x - gameObject.transform.localScale.x * bounds.size.x * 0.5f;
+        float maxX = bounds.center.x + gameObject.transform.localScale.x * bounds.size.x * 0.5f;
+        float minZ = bounds.center.z - gameObject.transform.localScale.z * bounds.size.z * 0.5f;
+        float maxZ = bounds.center.z + gameObject.transform.localScale.z * bounds.size.z * 0.5f;
+
+        return new Vector3(Random.Range(minX, maxX),
+                               0,
+                               Random.Range(minZ, maxZ));
     }
     /*
     private void LateUpdate()

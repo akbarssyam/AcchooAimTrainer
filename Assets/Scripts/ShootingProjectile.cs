@@ -10,6 +10,11 @@ public class ShootingProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PauseMenuBehaviour.GameIsPaused)
+        {
+            return;
+        }
+
         if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
@@ -18,7 +23,7 @@ public class ShootingProjectile : MonoBehaviour
 
     public void Shoot()
     {
-        GameObject clone = Instantiate(bulletPrefab, Camera.main.transform.position, Quaternion.identity);
+        GameObject clone = Instantiate(bulletPrefab, Camera.main.transform.position + Camera.main.transform.forward, Quaternion.identity);
         clone.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * bulletSpeed);
         Destroy(clone, 5.0f);
     }

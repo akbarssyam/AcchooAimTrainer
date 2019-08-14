@@ -11,6 +11,9 @@ public class EnemyBehaviour : MonoBehaviour
 
     public event Action<float> OnHealthPctChanged = delegate { };
 
+    [HideInInspector]
+    public ISpawnManager spawnManager;
+
     private float curhp;
 
     private void Start()
@@ -40,7 +43,8 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void UpdateUI()
     {
-        hpText.text = curhp.ToString();
+        if (hpText != null)
+            hpText.text = curhp.ToString();
 
         float currentHealthPct = (float)curhp / (float)maxhp;
         OnHealthPctChanged(currentHealthPct);
@@ -55,6 +59,16 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if (isQuitting) return;
 
-        GameObject.Find("EnemyManager").GetComponent<EnemySpawnManager>().SpawnEnemy();
+        /*
+        if (gameObject.CompareTag("Enemy"))
+        {
+            GameObject.Find("ObjectManager").GetComponent<EnemySpawnManager>().SpawnEnemy();
+        } else if (gameObject.CompareTag("ShootingTarget"))
+        {
+            GameObject.Find("ObjectManager").GetComponent<ShootingTargetSpawnManager>().SpawnEnemy();
+        }
+        */
+        spawnManager.SpawnEnemy();
+
     }
 }

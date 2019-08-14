@@ -12,3 +12,7 @@ Unity Version: 2019.1.6
   * Slow and powerful rifle
 
 * Fast running enemy to shoot at with health bar
+* Strafing shooting target
+* Jumping enemy target
+
+* Mouse sensitivity settings
