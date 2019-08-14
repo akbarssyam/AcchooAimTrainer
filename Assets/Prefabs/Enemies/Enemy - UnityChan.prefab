@@ -533,8 +533,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  stoppingDistance: 2
+  stoppingDistance: 3
   groundObject: {fileID: 0}
+  jumping: 0
   character: {fileID: 6281486336547089270}
 --- !u!54 &6281486336547089269
 Rigidbody:
