@@ -21,6 +21,7 @@ public class ShootingHitscan : MonoBehaviour {
     private LineRenderer laserLine;
 
 
+
     private void Start()
     {
         // Delay between shots
